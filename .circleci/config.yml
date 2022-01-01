@@ -10,7 +10,7 @@ jobs:
           command: /home/circleci/.pyenv/versions/3.10.1/bin/python3.10 -m pip install --upgrade pip
       - run: 
           name: Insall Dependices
-          command: pip3 install -r requirements.txt && sudo apt install ffmpeg
+          command: pip3 install beautifulsoup4 Pillow ffmpy feedparser Mastodon.py filetype && sudo apt install ffmpeg
       - run: 
           name: Begin
           command: python3 run.py
