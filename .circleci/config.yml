@@ -12,6 +12,9 @@ jobs:
           name: Insall Dependices
           command: pip3 install beautifulsoup4 Pillow ffmpy feedparser Mastodon.py filetype
       - run: 
+          name: Insall FFmpeg
+          command: sudo apt update && sudo apt install ffmpeg -y         
+      - run: 
           name: Begin
           command: python3 run.py
 workflows:
